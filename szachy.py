@@ -64,51 +64,76 @@ def parse_args():
     
     return vars(parser.parse_args())
 
-def load_tasks(input, filters):
-    tasks = parse_file(input)
-    
+def filter_tasks(tasks, filters):
+    result = tasks
     if filters['chapter'] != None:
-        tasks = [task for task in tasks if task.chapter.split('.')[0] == filters['chapter']]
+        result = [task for task in result if task.chapter.split('.')[0] == filters['chapter']]
     if filters['lesson'] != None:
-        tasks = [task for task in tasks if int(task.lesson.split('.')[0]) == int(filters['lesson'])]
+        result = [task for task in result if int(task.lesson.split('.')[0]) == int(filters['lesson'])]
     if filters['task_number'] != None:
-        tasks = [task for task in tasks if task.number == int(filters['task_number'])]
+        result = [task for task in result if task.number == int(filters['task_number'])]
     if filters['tags'] != None:
         tags = [tag.strip() for tag in filters['tags'].split(',')]
-        tasks = [task for task in tasks if all([tag in task.tags for tag in tags])]       
+        result = [task for task in result if all([tag in task.tags for tag in tags])]       
     if filters['shuffle']:
-        random.shuffle(tasks)
+        random.shuffle(result)
     if filters['count'] != None:
-        tasks = tasks[0:filters['count']]
+        result = result[0:filters['count']]
         
-    return tasks  
+    print(result)
+    return result  
 
 class Record:
     pass
 
-def connect_db(db_file):
-    return 
-
-def drill(db_file, user):
+def sql_query(connection, query):
     try:
-        connection = sqlite3.connect(repr(db_file))
+        c = connection.cursor()
+        c.execute(query)
     except Error as e:
+        print(e)
+
+def init_db(tasks, connection):
+    sql_init_tasks_table = """ CREATE TABLE IF NOT EXISTS tasks(
+        id integer PRIMARY KEY,
+        FEN text NOT NULL,
+        chapter text NOT NULL,
+        lesson integer NOT NULL,
+        number integer NOT NULL,
+        tags text,
+        comment text
+    );"""
+    sql_query(connection, sql_init_tasks_table)
+    sql_query(connection, "DELETE FROM tasks")
+    id = 0
+    for task in tasks:
+        sql_query(connection, 'INSERT INTO tasks VALUES (' + str(id) + ',"' + task.FEN.strip() + '", "' + task.chapter + '", "' + str(task.lesson) + '", ' + str(task.number) + ', "' + str(task.tags) + '", "' + task.comment + '")')
+        id +=1
+    connection.commit()
+
+def drill(tasks, db_file, user):
+    try:
+        connection = sqlite3.connect(db_file)
+        init_db(tasks, connection)
+    except Error as e:
+        print("Error in init_db")
         print(e)
         
     finally:
+        print("Closing connection")
         connection.close()
 
 def main():
     args = parse_args()
-    # print(str(args))
-    tasks = load_tasks(args['input'], args)
+    tasks = parse_file(args['input'])
 
-    print("Tasks file parsed:")
-    [print(task) for task in tasks]
-    
-    if 'drill' in args:
+    if args['drill']:
         print("Drill!")
-        drill(args['db_file'], args['user'])
+        drill(tasks, args['db_file'], args['user'])
+    else:
+        tasks = filter_tasks(tasks, args)
+        [print(task) for task in tasks]
+        
     
 if __name__ == '__main__':
     main()
