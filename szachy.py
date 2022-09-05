@@ -64,21 +64,21 @@ def parse_args():
     
     return vars(parser.parse_args())
 
-def load_tasks(input, **filters):
+def load_tasks(input, filters):
     tasks = parse_file(input)
     
-    if 'chapter' in filters:
-        tasks = [task for task in tasks if task.chapter == filters['chapter']]
-    if 'lesson' in filters:
-        tasks = [task for task in tasks if int(task.lesson.filters('.')[0]) == int(filters['lesson'])]
-    if 'task_number' in filters:
+    if filters['chapter'] != None:
+        tasks = [task for task in tasks if task.chapter.split('.')[0] == filters['chapter']]
+    if filters['lesson'] != None:
+        tasks = [task for task in tasks if int(task.lesson.split('.')[0]) == int(filters['lesson'])]
+    if filters['task_number'] != None:
         tasks = [task for task in tasks if task.number == int(filters['task_number'])]
-    if 'tags' in filters:
+    if filters['tags'] != None:
         tags = [tag.strip() for tag in filters['tags'].split(',')]
         tasks = [task for task in tasks if all([tag in task.tags for tag in tags])]       
-    if 'shuffle' in filters:
+    if filters['shuffle']:
         random.shuffle(tasks)
-    if 'count' in filters:
+    if filters['count'] != None:
         tasks = tasks[0:filters['count']]
         
     return tasks  
@@ -87,20 +87,21 @@ class Record:
     pass
 
 def connect_db(db_file):
-    connection = None
-    try:
-        connection = sqlite3.connect(db_file)
-    except Error as e:
-        print(e)
-    return connection         
+    return 
 
 def drill(db_file, user):
-    record = connect_db(db_file)
+    try:
+        connection = sqlite3.connect(repr(db_file))
+    except Error as e:
+        print(e)
+        
+    finally:
+        connection.close()
 
 def main():
     args = parse_args()
-    print(str(args))
-    tasks = load_tasks(args['input'], filters=args)
+    # print(str(args))
+    tasks = load_tasks(args['input'], args)
 
     print("Tasks file parsed:")
     [print(task) for task in tasks]
