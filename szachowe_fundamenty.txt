@@ -1,4 +1,6 @@
-29. Trzy Pionki vs. Dwa Pionki.
+# 1. Końcówki
+## 29.Trzy Pionki vs. Dwa Pionki.
+[piony, przewaga]
 1. 1k5K/8/8/p7/P7/1PP5/8/8 w - - 0 1
 2. 1k6/7p/6pP/1PP3P1/4K3/8/8/8 w - - 0 1
 3. 7k/7p/7P/8/2pp4/8/8/2K5 b - - 0 1
@@ -6,7 +8,8 @@
 5. 8/5k2/2p5/2Pp1p2/pp1PpP2/P3P3/4P3/2K5 b - - 0 1
 6. 6k1/8/8/2p5/1pPp1PP1/1P1P4/8/K7 w - - 0 1
 
-30. Trzy Pionki vs. Dwa Pionki
+## 30. Trzy Pionki vs. Dwa Pionki
+[piony, przewaga]
 1. 1k6/8/8/6pp/8/6K1/PPP5/8 w - - 0 1
 2. 1k6/8/P4p2/1PP1pPpp/4P3/6K1/8/8 w - - 0 1
 3. 8/5pp1/8/1k4K1/1P6/P1P5/8/8 w - - 0 1
@@ -14,7 +17,8 @@
 5. 8/1p4k1/8/2p5/6PP/p7/8/1K6 b - - 0 1
 6. 1k6/8/P1P5/8/8/6p1/1P3p2/5K2 w - - 0 1
 
-31. Realizacja przewagi pionów
+## 31. Realizacja przewagi pionów
+[piony, przewaga]
 1. 8/3k4/pp6/8/PPP5/3K4/8/8 w - - 0 1
 2. 8/8/4k1pp/8/4KP1P/8/6P1/8 w - - 0 1
 3. 8/8/5k2/8/5ppp/8/6PP/5K2 b - - 0 1
@@ -22,7 +26,8 @@
 5. 8/2p5/1p1k4/3P4/2P5/3K4/1P6/8 w - - 0 1
 6. 8/8/8/4k2p/6p1/5pP1/5P2/5K2 b - - 0 1
 
-32. Wyścig pionów
+## 32. Wyścig pionów
+[piony]
 1. 8/p7/8/5K2/2k5/8/7P/8 w - - 0 1
 2. 8/7p/8/3k1KPP/pp6/8/P7/8 w - - 0 1
 3. 8/pp6/8/6K1/1k6/8/6PP/8 w - - 0 1
@@ -30,7 +35,8 @@
 5. 8/p7/8/7K/k7/8/7P/8 w - - 0 1
 6. 8/6p1/8/3K1k2/8/8/1P6/8 w - - 0 1
 
-33. Kwadrat pionka
+## 33. Kwadrat pionka
+[piony]
 1. 8/8/8/8/P4k2/1K6/8/8 w - - 0 11. 6k1/8/8/8/8/2P5/8/3K4 w - - 0 1
 2. 4k3/8/5p2/8/8/8/8/1K6 b - - 0 1
 3. 1k6/8/8/8/8/5P2/8/4K3 w - - 0 1
@@ -38,13 +44,14 @@
 5. 1k6/7p/3p3P/8/8/p7/P7/7K b - - 0 1
 6. 1k6/7p/7P/p7/P7/5P2/8/4K3 w - - 0 1
 
-2. 8/2p5/1k6/8/4K2p/pPP5/P7/8 b - - 0 1 (czarne zaczynają i remisują)
-3. 8/8/4k2P/8/p2K4/8/8/8 b - - 0 1 (czarne zaczynają i remisują)
-4. 8/8/7P/4k1p1/6P1/8/8/4K3 b - - 0 1 (czarne zaczynają i remisują)
-5. 8/1k6/8/4K3/8/p7/8/8 w - - 0 1 (białe zaczynają i remisują)
-6. 8/1K5p/8/k7/8/8/8/8 w - - 0 1 (białe zaczynają i remisują)
+7. 8/2p5/1k6/8/4K2p/pPP5/P7/8 b - - 0 1 // czarne zaczynają i remisują
+8. 8/8/4k2P/8/p2K4/8/8/8 b - - 0 1 // czarne zaczynają i remisują
+9. 8/8/7P/4k1p1/6P1/8/8/4K3 b - - 0 1 // czarne zaczynają i remisują
+10. 8/1k6/8/4K3/8/p7/8/8 w - - 0 1 // białe zaczynają i remisują
+11. 8/1K5p/8/k7/8/8/8/8 w - - 0 1 // białe zaczynają i remisują
 
-34. Przełom pionów
+## 34. Przełom pionów
+[piony]
 1. 8/5ppp/8/5PPP/k7/8/K7/8 w - - 0 1
 2. k7/8/K7/5pp1/4p2p/4P2P/5PP1/8 b - - 0 1
 3. 8/6p1/8/6PP/k7/8/K7/8 w - - 0 1
@@ -52,10 +59,11 @@
 5. 8/8/8/1p3p2/p1pPk3/PpP1P1p1/1P2K1P1/8 b - - 0 1
 6. 8/1pp5/1p4p1/1P1P3k/P3P2p/5K2/5P1P/8 w - - 0 1
 
-35. Rodzaje opozycji
+## 35. Rodzaje opozycji
 (brak zadań)
 
-36. Król vs. król i pion
+## 36. Król vs. król i pion
+[król, piony, przewaga, opozycja]
 1. 4k3/8/4K3/4P3/8/8/8/8 w - - 0 1
 2. 4k3/8/8/8/4K3/8/4P3/8 w - - 0 1
 3. 7k/8/7K/1p6/8/1P6/8/8 w - - 0 1
@@ -63,7 +71,8 @@
 5. 8/8/8/5p2/6k1/8/5K2/8 b - - 0 1
 6. 8/2p5/8/8/2k5/8/1K6/8 b - - 0 1
 
-37. Król vs. król i pion (cd.)
+## 37. Król vs. król i pion (cd.)
+[król, piony, przewaga, opozycja]
 1. 4k3/4p3/8/8/8/8/8/4K3 b - - 0 1
 2. 1k6/8/8/8/8/8/2P5/4K3 w - - 0 1
 3. 6k1/8/8/8/8/8/5PK1/8 w - - 0 1
@@ -71,15 +80,17 @@
 5. 8/1p3k2/8/8/8/8/4K3/8 b - - 0 1
 6. 8/5K2/4P3/8/8/8/1k6/8 w - - 0 1
 
-38. Król vs. król i pion (obrona)
-1. 8/5K2/8/4k3/5p2/8/8/8 w - - 0 1 (białe zaczynają i remisują)
-2. 8/8/8/6P1/5K2/8/6k1/8 b - - 0 1 (czarne zaczynają i remisują)
-3. 8/1K6/1P6/8/1k6/8/8/8 b - - 0 1 (czarne zaczynają i remisują)
-4. 8/8/8/8/1K6/2P5/2k5/8 b - - 0 1 (czarne zaczynają i remisują)
-5. 8/8/8/7K/6P1/8/6k1/8 b - - 0 1 (czarne zaczynają i remisują)
-6. 8/8/3k4/3p4/8/3K4/8/8 w - - 0 1 (białe zaczynają i remisują)
+## 38. Król vs. król i pion (obrona)
+[król, piony, obrona, opozycja]
+1. 8/5K2/8/4k3/5p2/8/8/8 w - - 0 1 // białe zaczynają i remisują
+2. 8/8/8/6P1/5K2/8/6k1/8 b - - 0 1 // czarne zaczynają i remisują
+3. 8/1K6/1P6/8/1k6/8/8/8 b - - 0 1 // czarne zaczynają i remisują
+4. 8/8/8/8/1K6/2P5/2k5/8 b - - 0 1 // czarne zaczynają i remisują
+5. 8/8/8/7K/6P1/8/6k1/8 b - - 0 1 // czarne zaczynają i remisują
+6. 8/8/3k4/3p4/8/3K4/8/8 w - - 0 1 // białe zaczynają i remisują
 
-39.Król vs. Król + Pionek bandowy
+## 39.Król vs. Król + Pionek bandowy
+[król, pion bandowy]
 1. 2k5/8/1K6/P7/8/8/8/8 b - - 0 1
 2. 2k5/8/K7/8/8/8/P7/8 b - - 0 1
 3. 8/8/8/7K/5k2/7P/8/8 b - - 0 1
@@ -87,7 +98,8 @@
 5. 8/8/1K6/8/2k5/8/P7/8 b - - 0 1
 6. 8/8/3k4/1K6/8/8/P7/8 b - - 0 1
 
-40.Opozycja krótka - realizacja przewagi
+## 40.Opozycja krótka - realizacja przewagi
+[król, piony, przewaga]
 1. 5k2/3K1p2/5P2/8/8/8/8/8 w - - 0 1
 2. 4k3/8/6P1/4K3/8/8/8/8 w - - 0 1
 3. 4k3/4p3/4P3/5K2/8/8/8/8 w - - 0 1
@@ -95,7 +107,8 @@
 5. 8/8/8/8/4p3/4P1k1/4K3/8 b - - 0 1
 6. 8/8/8/2p5/4k3/2P5/2K5/8 b - - 0 1
 
-42. Opozycja skośna
+## 42. Opozycja skośna
+[król, piony, przewaga, opozycja]
 1. 6k1/8/8/8/8/2P5/8/3K4 w - - 0 1
 2. 4k3/8/5p2/8/8/8/8/1K6 b - - 0 1
 3. 1k6/8/8/8/8/5P2/8/4K3 w - - 0 1
@@ -103,23 +116,26 @@
 5. 1k6/7p/3p3P/8/8/p7/P7/7K b - - 0 1
 6. 1k6/7p/7P/p7/P7/5P2/8/4K3 w - - 0 1
 
-43. Opozycja - obrona
-1. 8/8/8/2p1k1p1/1pP3Pp/1P1K3P/8/8 w - - 0 1 (białe zaczynają, czarne remisują)
-2. 8/8/1p1k2p1/2p3p1/2P3Pp/pP5P/P2K3P/8 w - - 0 1 (białe zaczynają, czarne remisują)
-3. 8/7p/1p2k3/1Pp3p1/2P1K1P1/8/7P/8 w - - 0 1 (białe zaczynają i remisują)
-4. 8/8/8/2p1k3/1pP3p1/pPp1K1Pp/P1P4P/8 w - - 0 1 (białe zaczynają i remisują)
-5. 8/3k4/8/2p3p1/1pP3Pp/pP2K2P/P7/8 b - - 0 1 (czarne zaczynają i remisują)
+## 43. Opozycja - obrona
+[król, piony, obrona, opozycja]
+1. 8/8/8/2p1k1p1/1pP3Pp/1P1K3P/8/8 w - - 0 1 // białe zaczynają, czarne remisują
+2. 8/8/1p1k2p1/2p3p1/2P3Pp/pP5P/P2K3P/8 w - - 0 1 // białe zaczynają, czarne remisują
+3. 8/7p/1p2k3/1Pp3p1/2P1K1P1/8/7P/8 w - - 0 1 // białe zaczynają i remisują
+4. 8/8/8/2p1k3/1pP3p1/pPp1K1Pp/P1P4P/8 w - - 0 1 // białe zaczynają i remisują
+5. 8/3k4/8/2p3p1/1pP3Pp/pP2K2P/P7/8 b - - 0 1 // czarne zaczynają i remisują
 6. 8/7p/3k2pP/p4pP1/P3pP2/2K1P3/8/8 b - - 0 1
 
-44. Opozycja daleka
-1. 8/8/8/1p1p4/8/2P5/3K4/k7 w - - 0 1 (białe zaczynają i remisują)
-2. 8/p7/Pp2k2p/1Pp3pP/2P3P1/8/5K2/8 w - - 0 1 (białe zaczynają i remisują)
-3. 8/8/8/6k1/4p3/4P3/8/7K w - - 0 1 (białe zaczynają i remisują) 
-4. 8/8/8/2k2p1p/4pPpP/4P1P1/8/1K6 w - - 0 1 (białe zaczynają i remisują)
-5. 8/2p4p/1pP4P/pP1k2p1/Pp3pP1/1P3P2/8/2K5 w - - 0 1 (białe zaczynają i remisują)
-6. 8/8/7p/p2k2pP/Pp3pP1/1P3P2/8/2K5 w - - 0 1 (białe zaczynają i remisują)
+## 44. Opozycja daleka
+[król, piony, opozycja]
+1. 8/8/8/1p1p4/8/2P5/3K4/k7 w - - 0 1 // białe zaczynają i remisują
+2. 8/p7/Pp2k2p/1Pp3pP/2P3P1/8/5K2/8 w - - 0 1 // białe zaczynają i remisują
+3. 8/8/8/6k1/4p3/4P3/8/7K w - - 0 1 // białe zaczynają i remisują 
+4. 8/8/8/2k2p1p/4pPpP/4P1P1/8/1K6 w - - 0 1 // białe zaczynają i remisują
+5. 8/2p4p/1pP4P/pP1k2p1/Pp3pP1/1P3P2/8/2K5 w - - 0 1 // białe zaczynają i remisują
+6. 8/8/7p/p2k2pP/Pp3pP1/1P3P2/8/2K5 w - - 0 1 // białe zaczynają i remisują
 
-45. Opozycja bez ruszania królem
+## 45. Opozycja bez ruszania królem
+[król, piony, opozycja]
 1. 1k6/p7/K7/P7/8/8/1P6/8 w - - 0 1
 2. 8/6p1/8/p1k1p1p1/P3PpP1/2K2P2/8/8 b - - 0 1
 3. 8/8/1p2k2p/pPp3pP/P1P1K1P1/8/7P/8 w - - 0 1
@@ -127,7 +143,8 @@
 5. 6k1/7p/8/6PK/8/8/7P/8 w - - 0 1
 6. 8/8/P3K2P/pP4Pp/1pP1k1p1/2p5/p7/1k6 b - - 0 1
 
-46. Dwa Piony + Król vs. Pion + Król
+## 46. Dwa Piony + Król vs. Pion + Król
+[król, piony, przewaga, opozycja]
 1. 8/8/4kp2/8/5PP1/6K1/8/8 w - - 0 1
 2. 8/6k1/6p1/8/6KP/8/5P2/8 w - - 0 1
 3. 8/1k6/p7/P7/1K6/8/2P5/8 w - - 0 1
@@ -135,7 +152,8 @@
 5. 8/3p4/4p3/3k4/8/3KP3/8/8 b - - 0 1
 6. 8/3p4/8/2k5/1p6/1KP5/8/8 b - - 0 1
 
-47. Zugzwang
+## 47. Zugzwang
+[król, piony]
 1. 8/3k4/p5p1/Pp3pPp/1P1K1P1P/8/8/8 w - - 0 1
 2. 8/6p1/6Kp/5P2/6kP/8/8/8 b - - 0 1
 3. 8/8/6pp/4K1Pk/5P2/8/8/8 w - - 0 1
@@ -143,7 +161,8 @@
 5. 8/5p1p/Kpk5/2p2p2/P4P1P/1P4P1/8/8 b - - 0 1
 6. 8/8/1Kp5/1p1k4/1P6/2P5/8/8 w - - 0 1
 
-48. Motyw trójkąta
+## 48. Motyw trójkąta
+[król, piony]
 1. 8/1p1k4/1P6/2PK4/8/8/8/8 w - - 0 1
 2. 8/8/5p1k/5P2/6K1/7P/8/8 w - - 0 1
 3. 2k5/8/p1P5/P2K4/8/8/8/8 w - - 0 1
@@ -151,7 +170,8 @@
 5. 8/8/8/4kP2/3p2P1/3K4/8/8 w - - 0 1
 6. 8/8/8/4p3/k1p5/2P1K3/P7/8 w - - 0 1
 
-49. Pion bandowy vs. skoczek
+## 49. Pion bandowy vs. skoczek
+[skoczek, pion bandowy]
 1. 3n4/7k/8/2K5/P7/8/8/8 w - - 0 1
 2. 8/n7/8/k4K2/8/8/7P/8 w - - 0 1
 3. 3n4/7k/8/3K4/P7/8/8/8 w - - 0 1
@@ -159,24 +179,27 @@
 5. 8/8/1K4k1/8/8/P7/8/6n1 w - - 0 1
 6. 2n5/8/4K3/8/8/7P/3k4/8 w - - 0 1
 
-50. Pion bandowy vs. skoczek
+## 50. Pion bandowy vs. skoczek
+[skoczek, pion bandowy]
 1. 8/1n2k3/8/P7/8/4K3/8/8 w - - 0 1
 2. 8/1n2k3/8/P7/8/5K2/8/8 w - - 0 1
 3. 8/1n1k4/8/P7/8/5K2/8/8 w - - 0 1
-4. 2k5/1n6/8/P7/8/5K2/8/8 w - - 0 1 (Białe zaczynają, czarne remisują)
-5. 8/1n1k4/8/P7/4K3/8/8/8 w - - 0 1 (Białe zaczynają, czarne remisują)
-6. 8/1n1k4/8/P2K4/8/8/8/8 w - - 0 1 (Białe zaczynają, czarne remisują)
+4. 2k5/1n6/8/P7/8/5K2/8/8 w - - 0 1 // Białe zaczynają, czarne remisują
+5. 8/1n1k4/8/P7/4K3/8/8/8 w - - 0 1 // Białe zaczynają, czarne remisują
+6. 8/1n1k4/8/P2K4/8/8/8/8 w - - 0 1 // Białe zaczynają, czarne remisują
 
-51. Skoczek vs. pion
-1. 6k1/6n1/3P4/2K5/8/8/8/8 w - - 0 1 (Białe zaczynają, czarne remisują)
-2. 1k2n3/8/3P4/8/8/8/5K2/8 w - - 0 1 (Białe zaczynają, czarne remisują)
-3. 1k1n4/8/3P4/8/8/8/5K2/8 w - - 0 1 (Białe zaczynają, czarne remisują)
-4. 1kn5/8/3P4/8/8/8/5K2/8 w - - 0 1 (Białe zaczynają, czarne remisują)
-5. 8/2K5/3P4/2n5/8/8/8/7k w - - 0 1 (Białe zaczynają, czarne remisują)
-6. 8/1n1k4/8/P2K4/8/8/8/8 w - - 0 1 (Białe zaczynają, czarne remisują)
+## 51. Skoczek vs. pion
+[skoczek]
+1. 6k1/6n1/3P4/2K5/8/8/8/8 w - - 0 1 // Białe zaczynają, czarne remisują
+2. 1k2n3/8/3P4/8/8/8/5K2/8 w - - 0 1 // Białe zaczynają, czarne remisują
+3. 1k1n4/8/3P4/8/8/8/5K2/8 w - - 0 1 // Białe zaczynają, czarne remisują
+4. 1kn5/8/3P4/8/8/8/5K2/8 w - - 0 1 // Białe zaczynają, czarne remisują
+5. 8/2K5/3P4/2n5/8/8/8/7k w - - 0 1 // Białe zaczynają, czarne remisują
+6. 8/1n1k4/8/P2K4/8/8/8/8 w - - 0 1 // Białe zaczynają, czarne remisują
 7. 8/5NN1/8/p7/8/1k6/7P/7K w - - 0 1
 
-52. Matowanie dwoma skoczkami (bardzo trudne)
+## 52. Matowanie dwoma skoczkami (bardzo trudne)
+[skoczek, mat]
 1. 8/8/2N5/2p5/8/3KN3/8/2k5 w - - 0 1
 2. 2k5/8/2NK4/8/4N3/2p5/8/8 w - - 0 1
 3. k7/8/2NK4/8/2p1N3/8/8/8 w - - 0 1
@@ -184,11 +207,111 @@
 5. 8/8/2N5/5N2/2p5/5K1k/8/8 w - - 0 1
 6. 8/8/8/8/2p1N3/4KN2/8/5k2 w - - 0 1
 
-53. Skoczek vs. pion
-1. 8/8/8/8/2K2k2/7p/8/7N w - - 0 1 (białe zaczynają i remisują)
-2. 8/8/8/8/2K5/5k2/7p/7N w - - 0 1 (białe zaczynają i remisują)
-3. 8/8/8/8/7p/5k2/8/2K4N w - - 0 1 (białe zaczynają i remisują)
-4. 8/8/8/8/7p/8/6k1/3K3N w - - 0 1 (białe zaczynają i remisują)
-5. 8/8/7p/8/K3k3/8/8/7N w - - 0 1 (białe zaczynają, czarne wygrywają)
-6. 8/8/7p/8/K3k3/8/8/7N w - - 0 1 (białe zaczynają i remisują)
+## 53. Skoczek vs. pion
+[skoczek]
+1. 8/8/8/8/2K2k2/7p/8/7N w - - 0 1 // białe zaczynają i remisują
+2. 8/8/8/8/2K5/5k2/7p/7N w - - 0 1 // białe zaczynają i remisują
+3. 8/8/8/8/7p/5k2/8/2K4N w - - 0 1 // białe zaczynają i remisują
+4. 8/8/8/8/7p/8/6k1/3K3N w - - 0 1 // białe zaczynają i remisują
+5. 8/8/7p/8/K3k3/8/8/7N w - - 0 1 // białe zaczynają, czarne wygrywają
+6. 8/8/7p/8/K3k3/8/8/7N w - - 0 1 // białe zaczynają i remisują
+
+## 54. Król vs. skoczek i pion bandowy
+[skoczek, pion bandowy]
+1. 7K/4k2P/8/8/8/8/8/1N6 b - - 0 1 // czarne zaczynają i remisują
+2. 7K/4k2P/8/8/8/8/8/2N5 b - - 0 1 // czarne zaczynają i remisują
+3. 7K/4k2P/8/8/8/8/8/3N4 b - - 0 1 // czarne zaczynają i remisują
+4. 7K/4k2P/8/8/8/8/8/4N3 b - - 0 1 // czarne zaczynają i remisują
+5. 7K/N3k2P/8/8/8/8/8/8 b - - 0 1 // czarne zaczynają i remisują
+6. 7K/4k2P/N7/8/8/8/8/8 b - - 0 1 // czarne zaczynają i remisują
+
+## 55. Skoczek vs. pion bandowy
+[skoczek, pion bandowy]
+1. K7/8/7p/8/4k3/8/1N6/8 w - - 0 1 // białe zaczynają i remisują
+2. K7/8/7p/8/4k3/1N6/8/8 w - - 0 1 // białe zaczynają i remisują
+3. K7/8/8/7p/8/1N3k2/8/8 b - - 0 1 // czarne zaczynają i remisują
+4. K7/8/8/7p/4k3/N7/8/8 b - - 0 1 // czarne zaczynają i wygrywają
+5. K7/8/8/7p/3k4/8/N7/8 b - - 0 1 // czarne zaczynają i remisują
+6. K7/8/8/7p/4k3/8/8/3N4 b - - 0 1 // czarne zaczynają i remisują
+
+## 56. Skoczek vs. Pion bandowy
+[skoczek, pion bandowy]
+1. 7K/5k2/7P/8/8/3n4/8/8 b - - 0 1
+2. 2n4K/5k2/7P/8/8/8/8/8 b - - 0 1
+3. 7K/5k2/7P/8/8/8/6n1/8 b - - 0 1
+4. 7K/3n1k2/7P/8/8/8/8/8 b - - 0 1
+5. 7K/5k2/7P/8/8/5n2/8/8 b - - 0 1
+6. 7K/5k2/7P/8/6n1/8/8/8 b - - 0 1
+
+## 57. Skoczek vs. pion
+[skoczek]
+1. 8/8/8/8/P1k5/2N5/8/7K w - - 0 1
+2. 8/8/8/8/Pk2N3/8/8/7K w - - 0 1
+3. 8/8/8/8/Pk6/8/8/3N3K w - - 0 1
+4. 8/8/8/8/2Pk4/8/6N1/7K w - - 0 1
+5. 8/8/8/8/1Pk2N2/8/8/7K w - - 0 1
+6. 8/8/8/8/2N2kP1/8/8/7K w - - 0 1
+
+## 58. Końcówka złożona
+[skoczek]
+1. 8/4k3/5pp1/2P5/2N5/8/4K3/8 w - - 0 1
+2. 8/5k2/5ppp/2P5/2N5/5P2/8/1K6 w - - 0 1
+3. 8/5kp1/4p3/8/7N/2KP4/8/8 w - - 0 1
+4. 8/2p1k3/4p3/8/8/2KP4/8/7N w - - 0 1
+5. 8/2p1k3/1p6/8/4P3/5K2/8/1N6 w - - 0 1
+6. 8/8/2p2p2/8/3P1K2/8/5k2/N7 w - - 0 1
+
+## 59. Końcówka skoczkowa
+[skoczek]
+1. 8/5n2/k3p1pp/8/P1KP3P/4P3/8/N7 w - - 0 1
+2. 8/8/k1N3p1/5p1p/P1K1nP1P/6P1/8/8 w - - 0 1
+3. 8/5p2/k5p1/6Np/P5nP/6P1/5P2/3K4 w - - 0 1
+4. 8/8/3k1pp1/5n1p/5N1P/5PP1/P7/3K4 w - - 0 1
+5. k7/8/2p1p1p1/1n6/1N6/2P1PKP1/P7/8 w - - 0 1
+6. 3k4/5n2/4p1pp/8/3P4/2P1KN2/PP6/8 w - - 0 1
+
+## 60. Łapanie pionków wieżą
+[wieża, piony]
+1. 3k4/8/5R2/8/6p1/7p/1K6/8 w - - 0 1
+2. 3k4/8/8/5p2/6p1/7R/1K6/8 w - - 0 1
+3. 3k4/8/7R/6p1/5p2/8/1K6/8 w - - 0 1
+4. 8/8/k1K4R/8/8/5pp1/8/8 w - - 0 1
+5. 8/3k4/7R/8/8/2p1p3/7K/8 w - - 0 1
+6. 8/7R/5k2/8/8/3p1p2/K7/8 w - - 0 1
+
+## 61. Wieża vs. Pionek
+[wieża, piony]
+1. 7R/pk6/8/8/8/8/7K/8 w - - 0 1
+2. 6RK/8/8/1kp5/8/8/8/8 w - - 0 1
+3. 6R1/8/5K2/pk6/8/8/8/8 w - - 0 1
+4. 2R5/8/5K2/1k6/p7/8/8/8 w - - 0 1
+5. R7/7K/8/pk6/8/8/8/8 w - - 0 1
+6. K7/3R4/6k1/7p/8/8/8/8 w - - 0 1
+
+## 62. Wieża vs pion bandowy
+[wieża, pion bandowy]
+1. 3R4/8/8/8/8/4K1kp/8/8 w - - 0 1
+2. 8/8/8/8/2R5/6kp/4K3/8 w - - 0 1
+3. 8/8/8/8/2R4p/7k/2K5/8 w - - 0 1
+4. 8/5R2/8/8/8/6kp/8/4K3 w - - 0 1
+5. 8/8/8/8/2R4p/7k/2K5/8 w - - 0 1
+6. 8/8/8/8/8/2R1K1kp/8/8 w - - 0 1
+
+## 63. Wieża vs. pion
+[wieża, piony]
+1. R7/8/8/8/7K/3kp3/8/8 w - - 0 1
+2. 2R5/8/7K/8/3kp3/8/8/8 w - - 0 1
+3. 1R6/2K5/8/3p4/4k3/8/8/8 w - - 0 1
+4. 2R5/7K/8/3p4/3k4/8/8/8 w - - 0 1
+5. 8/8/8/6K1/1pk5/8/8/7R w - - 0 1
+6. 8/8/8/6K1/8/2kp4/8/7R w - - 0 1
+
+## 64. Wieża vs. pion
+[wieża, piony]
+1. 8/2K5/8/3p4/4k3/8/8/7R w - - 0 1
+2. 8/K7/8/3pk3/8/8/8/R7 w - - 0 1
+3. 8/8/7K/3pk3/8/8/8/R7 w - - 0 1
+4. 7K/8/8/2kp4/8/8/8/R7 w - - 0 1
+5. 8/8/1p6/2k4K/8/8/8/R7 w - - 0 1
+6. 8/2K5/8/4kp2/8/8/8/R7 w - - 0 1
 
