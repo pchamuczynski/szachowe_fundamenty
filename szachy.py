@@ -3,8 +3,12 @@
 import argparse, random
 import sqlite3
 from sqlite3 import Error
+import chess, chess.svg
 
 class Task:
+    def __init__(self, tuple):
+        self.__init__(self, tuple[1], tuple[2], tuple[3], tuple[4], tuple[5], tuple[6])
+        
     def __init__(self, fen, chapter, lesson, number, tags, comment):
         self.FEN = fen
         self.chapter = chapter
@@ -83,13 +87,13 @@ def filter_tasks(tasks, filters):
     print(result)
     return result  
 
-class Record:
-    pass
 
 def sql_query(connection, query):
     try:
         c = connection.cursor()
         c.execute(query)
+        return c.fetchall()
+    
     except Error as e:
         print(e)
 
@@ -109,18 +113,48 @@ def init_db(tasks, connection):
     for task in tasks:
         sql_query(connection, 'INSERT INTO tasks VALUES (' + str(id) + ',"' + task.FEN.strip() + '", "' + task.chapter + '", "' + str(task.lesson) + '", ' + str(task.number) + ', "' + str(task.tags) + '", "' + task.comment + '")')
         id +=1
+        
+    sql_training_record_table = """CREATE TABLE IF NOT EXISTS training(
+        id integer PRIMARY KEY,
+        task_id integer NOT NULL,
+        date text NOT_NULL,
+        score integer not null,
+        FOREIGN KEY (task_id) REFERENCES tasks (id)
+        );"""
+    sql_query(connection, sql_training_record_table)
     connection.commit()
+
+def get_task(connection, task_id):
+    sql_get_task = """SELECT * FROM tasks WHERE id = """ + str(task_id)
+    result = sql_query(connection, sql_get_task)
+    if len(result) > 0:
+        return Task(result[0][1], result[0][2], result[0][3], result[0][4], result[0][5], result[0][6])
+    return None
+
+def select_task(connection, **filter):
+    sql_select_new_task = """ SELECT id FROM tasks WHERE id NOT IN
+        (SELECT task_id FROM training);"""
+    result = sql_query(connection, sql_select_new_task)
+    random.shuffle(result)
+    return get_task(connection, result[0][0])
+
 
 def drill(tasks, db_file, user):
     try:
         connection = sqlite3.connect(db_file)
         init_db(tasks, connection)
+        task = select_task(connection)
+        board = chess.Board(task.FEN)
+        boardsvg = chess.svg.board(board=board)
+        f = open("file.svg", "w")
+        f.write(boardsvg)
+        f.close()
+        
     except Error as e:
         print("Error in init_db")
         print(e)
         
     finally:
-        print("Closing connection")
         connection.close()
 
 def main():
@@ -128,7 +162,6 @@ def main():
     tasks = parse_file(args['input'])
 
     if args['drill']:
-        print("Drill!")
         drill(tasks, args['db_file'], args['user'])
     else:
         tasks = filter_tasks(tasks, args)
