@@ -332,3 +332,30 @@
 4. 6RK/2r4P/8/8/7k/8/8/8 w - - 0 1
 5. 6RK/2r4P/8/8/7k/8/8/8 b - - 0 1 // Czarne zaczynają i remisują
 6. 6RK/2r4P/8/3k4/8/8/8/8 b - - 0 1 // Czarne zaczynają i remisują
+
+## 67. Wieża za pionkiem bandowym
+[wieża, pion bandowy, remis, obrona]
+1. 7R/8/8/8/8/p5k1/K6p/7r w - - 0 1 // Białe zaczynają i remisują
+2. 7R/8/8/8/8/1p4k1/1K5p/7r w - - 0 1 // Białe zaczynają i remisują
+3. 7R/8/2p5/8/5k2/8/1K5p/7r b - - 0 1
+4. 7R/p7/2p5/8/1P3k2/8/1K5p/7r b - - 0 1
+5. 7R/1k4KP/1p6/1P6/P7/7r/8/8 b - - 0 1 // Czarne zaczynają i remisują
+6. R7/PK4k1/8/8/8/r7/8/8 b - - 0 1 // Czarne zaczynają i remisują
+
+## 68. Wieża vs wieża i pion
+[wieża, pion, remis, obrona]
+1. r3k3/8/8/3RP3/3K4/8/8/8 b - - 0 1 // Czarne zaczynają i remisują
+2. r5k1/8/8/5RP1/5K2/8/8/8 b - - 0 1 // Czarne zaczynają i remisują
+3. r4k2/8/8/4RP2/4K3/8/8/8 b - - 0 1 // Czarne zaczynają i remisują
+4. 2k4r/8/2P1R3/2K5/8/8/8/8 w - - 0 1
+5. 3k3r/8/3P1R2/3K4/8/8/8/8 w - - 0 1
+6. 7r/3k4/3P1R2/3K4/8/8/8/8 b - - 0 1 // Czarne zaczynają i remisują
+
+## 69. Wieża vs. wieża i pion 
+[wieża, pion]
+1. 5k2/3K4/3P4/8/8/6R1/3r4/8 w - - 0 1
+2. 4k3/8/3K4/3P4/8/8/4r3/3R4 b - - 0 1 // Czarne zaczynają i remisują
+3. 1k6/3K4/8/3P4/8/8/4r3/3R4 w - - 0 1
+4. 4k3/r7/2R1K3/4P3/8/8/8/8 w - - 0 1 // Czarne zaczynają i remisują
+5. 1r6/R7/8/8/5p2/5k2/3K4/8 w - - 0 1
+6. R7/8/2r5/8/5p2/8/3K1k2/8 w - - 0 1
