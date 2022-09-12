@@ -144,6 +144,7 @@ def drill(tasks, db_file, user):
         connection = sqlite3.connect(db_file)
         init_db(tasks, connection)
         task = select_task(connection)
+        print(task)
         board = chess.Board(task.FEN)
         boardsvg = chess.svg.board(board=board)
         f = open("file.svg", "w")
