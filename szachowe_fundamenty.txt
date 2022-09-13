@@ -356,6 +356,7 @@
 1. 5k2/3K4/3P4/8/8/6R1/3r4/8 w - - 0 1
 2. 4k3/8/3K4/3P4/8/8/4r3/3R4 b - - 0 1 // Czarne zaczynają i remisują
 3. 1k6/3K4/8/3P4/8/8/4r3/3R4 w - - 0 1
-4. 4k3/r7/2R1K3/4P3/8/8/8/8 w - - 0 1 // Czarne zaczynają i remisują
-5. 1r6/R7/8/8/5p2/5k2/3K4/8 w - - 0 1
-6. R7/8/2r5/8/5p2/8/3K1k2/8 w - - 0 1
+4. 4k3/r7/2R1K3/4P3/8/8/8/8 b - - 0 1 // Czarne zaczynają i remisują
+5. 1r6/R7/8/8/5p2/5k2/3K4/8 b - - 0 1
+6. R7/8/2r5/8/5p2/8/3K1k2/8 b - - 0 1
+
