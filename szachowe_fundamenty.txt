@@ -387,3 +387,11 @@
 5. 8/4k3/8/2pr4/6p1/2P2pP1/Pp5P/1R4K1 b - - 0 1
 6. 6r1/8/2k5/p2p4/2pP4/2P5/KP5p/7R b - - 0 1
 
+## 73. Aktywna wieża
+[wieża, zaawansowany pion, obrona]
+1. 7R/1kp4P/pp6/7K/8/8/PPP5/6r1 b - - 0 1 //Czarne zaczynają i remisują
+2. 7R/pp3k2/8/8/8/PP6/2K4p/7r w - - 0 1 // Białe zaczynają i remisują
+3. 7R/1k5P/1p4K1/2p5/p1P5/Pp1P4/1P6/7r b - - 0 1 //Czarne zaczynają i remisują
+4. 7R/2p1p3/8/8/8/2KP2k1/2P4p/7r w - - 0 1 // Białe zaczynają i remisują
+5. 7R/2p1p3/8/8/8/2KP2k1/2P4p/7r b - - 0 1 // Czarne zaczynają i remisują
+6. R7/8/8/8/1k6/8/p4P1K/r7 w - - 0 1 // Białe zaczynają i remisują
