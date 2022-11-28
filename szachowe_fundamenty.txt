@@ -585,3 +585,85 @@
 4. 8/1R6/8/k2K4/n7/8/8/8 b - - 0 1//remis
 5. 8/2R3K1/8/5k2/5n2/8/8/8 w - - 0 1//remis
 6. 5NK1/8/5k2/8/8/8/8/3r4 b - - 0 1
+
+##95. Wieża vs. goniec
+[wieża, goniec]
+
+##96. Skoczek vs. goniec
+[skoczek, goniec]
+1. 2k1n3/8/1KP4p/4B2P/8/8/8/8 w - - 0 1
+2. 2n3k1/8/8/2B2K2/6P1/8/8/8 w - - 0 1
+3. 8/8/8/6k1/2b3p1/6K1/8/2N5 b - - 0 1
+4. 8/8/8/1k6/1p6/8/8/1K2b2N b - - 0 1
+5. 1n4k1/8/6K1/1B6/8/8/6P1/8 w - - 0 1
+6. 1k2B2n/6p1/1K3p1p/4pP1P/4P2P/8/1P6/8 w - - 0 1
+
+##97. Hetman vs. dwie wieże
+[hetman, wieża]
+1. 8/R7/4q1pk/p1p2p1p/PpP5/1P4P1/7P/R6K b - - 0 1
+2. 8/8/p3q1p1/Pp3p2/1PpP1Pk1/2R1P1Pp/2R4P/6K1 b - - 0 1
+3. 6k1/5pp1/3qp2p/p7/Pp6/1R4P1/5P1P/2R3K1 b - - 0 1
+4. 8/5pkp/p1q1p1p1/Pp2P3/5P2/4P1Pp/3R3P/3R2K1 b - - 0 1
+5. 6k1/pR3p1p/1p4pP/q4P2/2P3P1/1P6/P7/K6R b - - 0 1
+6. 8/5q2/6pk/4Pp1p/3P1P2/7R/7P/R6K b - - 0 1
+
+##98. Skoczek lepszy od gońca
+[skoczek, goniec]
+//https://szachus.elms.pl/szkolenie.html?tid=1&lid=86
+1. 6k1/8/8/6K1/2N1p3/4P3/6P1/2b5 w - - 0 1
+2. 3B4/8/1p3p2/1Ppn1P2/3k4/8/3K4/8 b - - 0 1
+3. 8/4k1p1/4P1p1/4K3/5P2/2P3P1/4N3/4b3 w - - 0 1
+4. 4k3/8/8/4P3/1p2K1p1/2P3P1/4N3/4b3 w - - 0 1
+5. 4k3/8/1p5p/p2P2pP/PpKN1pP1/1P3P2/8/3b4 w - - 0 1
+6. 4B3/4n3/2p3p1/2Pp1pP1/3PkP2/2P1p1Pp/7P/4K3 b - - 0 1
+
+##99. Hetman lepszy od dwóch wież
+[hetman, wieża]
+//https://szachus.elms.pl/szkolenie.html?tid=1&lid=87
+1. 8/R7/4q1pk/p1p2p1p/PpP5/1P4P1/7P/R6K b - - 0 1
+2. 8/8/p3p1p1/Pp1q1p2/1PpP1Pk1/2R1P1Pp/2R4P/6K1 b - - 0 1
+3. 6k1/5pp1/3qp2p/p7/Pp6/1R4P1/5P1P/2R3K1 b - - 0 1
+4. 8/5pkp/p1q1p1p1/Pp2P3/5P2/4P1P1/3R3P/3R2K1 b - - 0 1
+5. 6k1/pR3p1p/1p4pP/q4P2/2P3P1/1P6/P7/K6R b - - 0 1
+6. 8/5q2/6pk/4Pp1p/3P1P2/7R/7P/R6K b - - 0 1
+
+#2. Taktyka
+##1. Odsłonięty król
+[taktyka, atak na króla]
+//https://szachus.elms.pl/szkolenie.html?tid=1&lid=90
+1. r2qrk2/3nb3/p5Q1/2ppn3/1p2p2P/NP2P3/P1PP1PB1/R3K1R1 w - - 0 1
+2. r2q1rk1/pb2n1b1/1pn2pp1/2pp2B1/4P2Q/PBN5/1PP3PP/R4RK1 w - - 0 1
+3. 5rk1/ppp2Rp1/7r/6p1/3P2Pq/1BP1RQ1n/PP3P1K/8 b - - 0 1
+4. 4br2/6bk/1p3p2/pP1PpR1p/Pq4rP/5N1K/2Q5/5R2 w - - 0 1
+5. rn2k2r/p5pp/1pp1p3/6q1/4P3/1Q6/PPPR1PP1/2K4R w - - 0 1
+6. 7k/6r1/3r4/1p2pp2/pPbP2p1/P1P1P2P/3R3K/6R1 b - - 0 1
+
+##2. Luźne piony i figury
+[taktyka, luźna figura]
+//https://szachus.elms.pl/szkolenie.html?tid=1&lid=91
+1. r1b3k1/ppppR1pp/8/4P3/8/2N1P3/PPP3PP/6K1 b - - 0 1
+2. r4r2/pp3p1k/3p3p/3P4/2P1pQ1p/5qPK/PPP2nR1/RN6 w - - 0 1
+3. r4rk1/1bq2pp1/p3p2p/1p6/1P1N4/P1N1B1Q1/2P3PP/2KR4 b - - 0 1
+4. 2kr1b1r/pp1q1ppp/2n2n2/3ppN2/4P3/2N1B3/PPP2PPP/R2Q1RK1 b - - 0 1
+5. 5rk1/p2qb1p1/1pR1p2p/4P3/P2p4/3P1N2/2Q2PPP/6K1 b - - 0 1
+6. 8/1p6/p1k1p3/1n1pP1p1/3P1p2/B2K1P2/PP3P2/8 w - - 0 1
+
+##3. Źle ułożone figury
+[kontrakak]
+//https://szachus.elms.pl/szkolenie.html?tid=1&lid=92
+1. r2q1knr/ppp2B1p/3p3b/n2Q2p1/3PPpb1/2P2N2/PP4PP/RNB2RK1 b - - 0 1
+2. rn2k2r/ppp2ppp/6q1/2P2b2/8/P4Pn1/1P1NP1PP/R1BQKBR1 b KQkq - 0 1
+3. Q1b2rk1/p4ppp/1q1b4/8/4pP2/P7/2P1B1PP/4RR1K b - - 0 1
+4. r1b2rk1/pppp1ppp/2n5/2q1P1B1/2B3n1/2Q2N2/P4PPP/1R3RK1 w - - 0 1
+5. 3rr3/kp3p2/p1bq1n1p/3pnQp1/3N4/P1P2NP1/1PB2PP1/2KR3R b - - 0 1
+6. 3r1br1/2pkqp2/B1p4p/3pB1p1/3P4/N2Q1P2/PPP2nPP/2KR4 w - - 0 1
+
+##4. Kombinacja szachowa
+[kombinacja]
+//https://szachus.elms.pl/szkolenie.html?tid=1&lid=93
+1. 3q1rk1/R4ppp/4p3/2Q1P3/2Pn4/6P1/5PBP/6KP b - - 0 1
+2. 5r1r/p3bpk1/1p1qp3/3nN2P/4Q1P1/3B4/P7/2R2RK1 w - - 0 1
+3. 4r1k1/5p2/2p4Q/8/1ppq4/6N1/1P3RPP/6K1 b - - 0 1
+4. 3r1k2/5pp1/1q3b2/2pBpP2/8/2QR4/1PP2P2/6K1 b - - 0 1
+5. 4r1k1/5pbp/2pq1np1/2Np1b2/1r1B4/4P1PP/2P1QPB1/2RR2K1 b - - 0 1
+6. 2r1k2r/1pqbbp2/p3p1p1/3pP3/3P1PQ1/NnPB1N2/3B4/R4RK1 b - - 0 1
