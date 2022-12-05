@@ -1,9 +1,22 @@
 #!/usr/bin/python3
 
 import argparse, random
-import sqlite3
 from sqlite3 import Error
+import tkinter
 import chess, chess.svg
+from utils.chessdb import ChessDb
+import sys
+from enum import Enum
+import keyboard
+
+class ACTION(Enum):
+    NEXT = 1
+    SKIP_SECTION = 2
+    ADD_TO_FAVORITES = 3
+    REMOVE_FROM_FAVORITES = 4
+    HINT = 5
+    SKIP = 6
+    QUIT = 100
 
 class Task:
     def __init__(self, tuple):
@@ -21,6 +34,7 @@ class Task:
     def __str__(self):
         return self.FEN + '\t(Chapter: ' + self.chapter + ', Lesson: ' + self.lesson + ', Task number: ' + str(self.number) + ', Tags: ' + str(self.tags) + ', Comment: ' + self.comment +')'       
     
+           
 def parse_file(filename):
     tasks = []
 
@@ -62,7 +76,7 @@ def parse_args():
     parser.add_argument('--task_number', dest='task_number', action='store', help='use only tasks with given number')
     parser.add_argument('--tags', dest='tags', action='store', help='use only tasks with given tags (separated by a comma and no spaces. put quotes around it, if tags contain spaces)')
     parser.add_argument('--shuffle', dest='shuffle', action='store_true', help='Shuffle the result before use')
-    parser.add_argument('--drill', dest='drill', action='store_true', help='Your daily drill')
+    parser.add_argument('--training', dest='training', action='store_true', help='Your daily training')
     parser.add_argument('--user', dest='user', action='store', help='Your name', default='default')
     parser.add_argument('--db_file', dest='db_file', action='store', help='Name of the database file', default='szachy.db')
     
@@ -114,14 +128,12 @@ def init_db(tasks, connection):
         sql_query(connection, 'INSERT INTO tasks VALUES (' + str(id) + ',"' + task.FEN.strip() + '", "' + task.chapter + '", "' + str(task.lesson) + '", ' + str(task.number) + ', "' + str(task.tags) + '", "' + task.comment + '")')
         id +=1
         
-    sql_training_record_table = """CREATE TABLE IF NOT EXISTS training(
+    sql_progress_table = """CREATE TABLE IF NOT EXISTS training(
         id integer PRIMARY KEY,
-        task_id integer NOT NULL,
-        date text NOT_NULL,
-        score integer not null,
         FOREIGN KEY (task_id) REFERENCES tasks (id)
+        favorite bool NOT NULL,
         );"""
-    sql_query(connection, sql_training_record_table)
+    sql_query(connection, sql_progress_table)
     connection.commit()
 
 def get_task(connection, task_id):
@@ -131,39 +143,100 @@ def get_task(connection, task_id):
         return Task(result[0][1], result[0][2], result[0][3], result[0][4], result[0][5], result[0][6])
     return None
 
-def select_task(connection, **filter):
-    sql_select_new_task = """ SELECT id FROM tasks WHERE id NOT IN
-        (SELECT task_id FROM training);"""
-    result = sql_query(connection, sql_select_new_task)
-    random.shuffle(result)
-    return get_task(connection, result[0][0])
+def perform_training_task(task, favorite, user, db):
+    print(task.FEN)
+    print("\n")
 
-
-def drill(tasks, db_file, user):
-    try:
-        connection = sqlite3.connect(db_file)
-        init_db(tasks, connection)
-        task = select_task(connection)
+    print("'Enter' - next task")
+    if favorite:
+        print("'f' - remove from favorites")
+    else:
+        print("'f' - add to favorites")
+    print("'h' - hint")
+    print("'s' - skip")
+    print("'q' - quit")   
+    print("\n")
+    
+    input = sys.stdin.readline()
+    if input == 'h\n':
         print(task)
-        board = chess.Board(task.FEN)
-        boardsvg = chess.svg.board(board=board)
-        f = open("file.svg", "w")
-        f.write(boardsvg)
-        f.close()
+        print("\n")
+        print("'Enter' - next task")
+        if favorite:
+            print("'f' - remove from favorites")
+        else:
+            print("'f' - add to favorites")
+        print("'s' - skip")
+        print("'q' - quit")   
+        print("\n")
+        input = sys.stdin.readline()
+    
+    if input == 'q\n':
+        return sys.exit(0)
+    elif input == 'f\n':
+        if favorite:
+            db.remove_from_favorites(user, task)
+        else:
+            db.add_to_favorites(user, task) 
+    elif input == 's\n':
+        return None
+    elif input == '\n':
+        db.update_training(user, task)
+    
+def perform_tasks(tasks, favorites, user, db):
+    for task in tasks:
+        perform_training_task(task, favorites, user, db)
+
+def training(tasks, db_file, user):
+    try:
+        db = ChessDb(db_file, tasks)
+        
+        print("First a few tasks that you already know")
+        solved_tasks = db.get_solved_tasks(user, 5, True)
+        favorite_tasks = db.get_favorite_tasks(user, 5, True)
+        new_tasks = db.get_new_tasks(user, 5)
+
+        if len(solved_tasks) == 0:
+            print('No routine tasks found. Please do some tasks some.')
+        else:
+            # [print(task) for task in solved_tasks]
+            perform_tasks(solved_tasks, False, user, db)
+        
+        print('----------------------------------------------')
+        print("Now a few new tasks")
+        if len(new_tasks) == 0:
+            print('No new tasks found. You have done all excercises. Congratulations!')
+        else:
+            # [print(task) for task in new_tasks]
+            perform_tasks(new_tasks, False, user, db)
+            
+        print('----------------------------------------------')
+        print("And finally, some tasks that you liked exceptionally!")
+        if len(favorite_tasks) == 0:
+            print('No favorite tasks found. Please add some.')
+        else:
+            # [print(task) for task in favorite_tasks]
+            perform_tasks(new_tasks, True, user, db)
+        print('----------------------------------------------')
         
     except Error as e:
         print("Error in init_db")
         print(e)
         
-    finally:
-        connection.close()
+def create_main_window():
+    win = tkinter.Tk(screenName="Chess")
+    win.mainloop()
 
 def main():
     args = parse_args()
     tasks = parse_file(args['input'])
+    db = ChessDb(args['db_file'], tasks)
 
-    if args['drill']:
-        drill(tasks, args['db_file'], args['user'])
+
+    # create_main_window()
+
+    if args['training']:
+        training(tasks, args['db_file'], args['user'])
     else:
         tasks = filter_tasks(tasks, args)
         [print(task) for task in tasks]
