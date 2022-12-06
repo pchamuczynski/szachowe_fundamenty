@@ -403,7 +403,7 @@
 5. 2R5/1r6/8/8/8/2p5/8/1k1K4 b - - 0 1
 6. 2k4K/8/7P/8/8/8/4R3/7r w - - 0 1
 
-## 71. Zaawansowany Pion więcej
+## 71. Zaawansowany pion więcej
 [wieża, zaawansowany pion]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=56
 1. r5k1/5ppp/P7/8/7P/6P1/5PK1/2R5 w - - 0 1
@@ -433,7 +433,7 @@
 5. 7R/2p1p3/8/8/8/2KP2k1/2P4p/7r b - - 0 1 // Czarne zaczynają i remisują
 6. R7/8/8/8/1k6/8/p4P1K/r7 w - - 0 1 // Białe zaczynają i remisują
 
-##74. Gońce
+## 74. Gońce
 [goniec, pion]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=59
 1. 7k/8/8/8/8/8/7P/6BK w - - 0 1
@@ -443,7 +443,7 @@
 5. k7/8/8/8/8/8/P5K1/7B w - - 0 1
 6. KB5k/8/8/7P/8/8/8/8 w - - 0 1
 
-##75. Goniec + pion, goniec
+## 75. Goniec + pion, goniec
 [goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=60
 1. 8/8/3k4/5Kp1/5bPp/7P/6B1/8 w - - 0 1 //remis
@@ -453,7 +453,7 @@
 5. 8/8/k7/2pK4/1pPb1B2/1P6/8/8 w - - 0 1
 6. 8/4k3/8/4Kp2/3b1Pp1/1B4P1/8/8 w - - 0 1
 
-##76. Goniec vs. łańcuch pionów
+## 76. Goniec vs. łańcuch pionów
 [goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=62
 1. 8/8/3pB3/p3p3/k4p2/2K3p1/7p/8 w - - 0 1 //remis
@@ -463,7 +463,7 @@
 5. 8/p7/p2p4/p4B2/k4p2/2K3p1/7p/8 w - - 0 1 //remis
 6. 8/p4B2/p2p4/p7/k7/2K5/7p/8 w - - 0 1 //remis
 
-##77. Blokada gońcem
+## 77. Blokada gońcem
 [goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=63
 1. 8/2p4p/2p3pP/P1p2pP1/3kbP2/8/4B3/2K5 w - - 0 1
@@ -473,7 +473,7 @@
 5. 6b1/3p3p/3p2pP/P2pkp2/1p6/1P3PP1/5B2/3K4 w - - 0 1
 6. 6b1/3p3p/3p2pP/P2pkpP1/1p6/1p3P2/1P3B2/3K4 w - - 0 1
 
-##78. Oddanie tempa gońcem
+## 78. Oddanie tempa gońcem
 [goniec, zugzwang]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=64
 1. 3b4/3k4/1p3p2/1P1K1P2/3B4/8/8/8 w - - 0 1
@@ -483,12 +483,12 @@
 5. 3b4/3k4/1p3p2/1P1K1P2/8/8/8/4B3 w - - 0 1
 6. B3b3/4k3/2p3p1/2P1K1P1/8/8/8/8 w - - 0 1
 
-##79. Jednobarwne gońce - zugzwang
+## 79. Jednobarwne gońce - zugzwang
 [goniec, zugzwang]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=65
 1. 8/7p/p2b4/P2k1p2/5P2/3K3P/3B4/8 b - - 0 1
 
-##80. Różnopolowe gonce - remis
+## 80. Różnopolowe gonce - remis
 [goniec, remis]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=66
 1. 7B/8/8/3k1b2/2p5/1p6/p7/K7 w - - 0 1 // remis
@@ -498,7 +498,7 @@
 5. 7k/8/6P1/5PK1/2B5/8/8/b7 b - - 0 1 //remis
 6. b7/8/1P6/1PB5/1P3PK1/Pp4P1/p7/7k b - - 0 1 // remis
 
-##81. Gońce Różnobarwne – zasada dwóch wolnych pionów
+## 81. Gońce Różnobarwne – zasada dwóch wolnych pionów
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=67
 [goniec, wolny pion]
 1. 4b3/8/5kPp/7P/1KB5/8/P7/8 w - - 0 1
@@ -508,7 +508,7 @@
 5. 3b4/4k2p/7P/4K3/3B4/8/1P4P1/8 w - - 0 1
 6. 8/8/8/3k3p/p3b1p1/8/3K3P/2B5 b - - 0 1
 
-##82. Walka gońca z pionkami
+## 82. Walka gońca z pionkami
 [goniec, obrona, remis]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=68
 1. 8/3k4/1K6/7b/PP6/8/8/8 b - - 0 1 //remis
@@ -518,7 +518,7 @@
 5. 2k5/P7/1K6/2P5/8/8/6b1/8 b - - 0 1 //remis
 6. 8/1B6/8/8/6pp/6k1/8/5K2 w - - 0 1 //remis
 
-##83. Poświęcenia 
+## 83. Poświęcenia 
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=69
 1. 8/8/4K3/pp6/2p5/PkB5/1P6/8 w - - 0 1
 2. 8/8/3K4/5pp1/4p3/4BkP1/5P2/8 w - - 0 1
@@ -527,7 +527,7 @@
 5. 8/8/8/6p1/5bKp/5P2/6PP/4k3 b - - 0 1
 6. 8/p7/P3p3/3bKp2/3P4/4PP1p/2k4P/8 b - - 0 1
 
-##84. Realizacja przewagi
+## 84. Realizacja przewagi
 [goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=70
 1. 8/8/6p1/3k3p/8/pPb2pN1/P4P1P/5K2 b - - 0 1
@@ -537,7 +537,7 @@
 5. 8/8/3k4/8/3bb1p1/pP1p2Pp/P2B1P1P/5BK1 b - - 0 1
 6. 8/8/8/2b5/2p1k1p1/2P3P1/4K2B/8 b - - 0 1
 
-##85. Gońce - aktywność króla
+## 85. Gońce - aktywność króla
 [goniec, król]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=71
 1. 8/1pp1bp1p/6p1/p3k1P1/2P2pBP/1P3P2/P4P2/7K b - - 0 1
@@ -547,7 +547,7 @@
 5. 8/4b3/8/1p4p1/p1p1k1Pp/2P4P/PPK5/3B4 b - - 0 1
 6. 8/2p5/1k1p2K1/pp1Pb1P1/4P3/3P4/3B4/8 w - - 0 1
 
-##86. Kreatywność w końcówce
+## 86. Kreatywność w końcówce
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=72
 1. k7/Pp6/1Pp5/2Pp4/3Pp3/4P3/5P2/6K1 w - - 0 1
 2. 2b5/1p1p1p2/1P1Pp3/1P2Pp2/1p1p1Pp1/kP1P2P1/2B5/2K5 w - - 0 1
@@ -556,7 +556,7 @@
 5. 8/qQ5p/3pN2K/3pp1R1/4k3/7N/1b1PP3/8 w - - 0 1
 6. q7/8/2p5/B2p2pp/5pp1/2N3k1/6P1/7K w - - 0 1
 
-##87. Różnopolowe gońce - dwie słabości
+## 87. Różnopolowe gońce - dwie słabości
 [goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=73
 1. 3b1k2/5p2/3p4/p1p3p1/P5P1/1P3K2/2PB2P1/8 w - - 0 1
@@ -566,7 +566,7 @@
 5. 2b1k3/5p1p/p4Pp1/Pp4P1/4K2P/8/1P2B3/8 w - - 0 1
 6. 3b4/3k4/1p3p2/pP1K1p1p/P4B1P/6P1/8/8 w - - 0 1
 
-##88. Różnopolowe gońce - realizacja dwóch pionów
+## 88. Różnopolowe gońce - realizacja dwóch pionów
 [goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=74
 1. 1k6/8/8/KP6/P2bB3/8/8/8 w - - 0 1
@@ -576,7 +576,7 @@
 5. 8/8/8/2B2p2/6bp/6k1/8/7K b - - 0 1
 6. 8/p7/5b2/1p6/8/1k1B4/8/1K6 b - - 0 1
 
-##89. Hetman vs pion bandowy
+## 89. Hetman vs pion bandowy
 [hetman, pion bandowy]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=75
 1. K7/P7/8/8/8/8/8/q6k w - - 0 1 // białe zaczynają i remisują
@@ -586,7 +586,7 @@
 5. 8/1Q6/8/8/1K6/8/p7/k7 w - - 0 1
 6. K7/P7/8/7q/1k6/8/8/8 b - - 0 1
 
-##90. Hetman vs. pion gońcowy
+## 90. Hetman vs. pion gońcowy
 [hetman, pion gońcowy]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=76
 1. 2K5/2P5/8/8/8/5q2/8/k7 w - - 0 1 // białe zaczynają i remisują
@@ -596,7 +596,7 @@
 5. 2K5/2P5/8/7q/8/8/8/2k5 w - - 0 1 // białe zaczynają i remisują
 6. 2K5/2P5/8/3k4/8/8/8/7q b - - 0 1
 
-##90. Hetman i pion vs. hetman
+## 91. Hetman i pion vs. hetman
 [hetman]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=77
 1. 8/P1K5/3Q4/1k6/4q3/8/8/8 w - - 0 1
@@ -606,7 +606,7 @@
 5. 8/8/3Q4/8/8/K7/p1q5/k7 w - - 0 1 // remis
 6. 8/8/3Q4/8/8/7K/5q1p/7k w - - 0 1
 
-##91. Wieczny szach
+## 92. Wieczny szach
 [hetman]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=79
 1. 6k1/5p2/6p1/6Q1/q5N1/p7/5PPP/1b4K1 w - - 0 1 // remis
@@ -616,7 +616,7 @@
 5. 2Q5/p1p2k2/2pb1n2/6p1/3Pp2q/2P2pR1/PP3P1P/6RK b - - 0 1 //remis
 6. 3r1bk1/6pp/5p2/8/p1pqQN2/1b2N1P1/5P1P/2R3K1 w - - 0 1 //remis
 
-##92. Ochrona króla
+## 93. Ochrona króla
 [hetman]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=80
 1. 2q5/2P2pkp/6p1/2Q5/8/7P/5PPK/8 w - - 0 1
@@ -625,7 +625,7 @@
 4. q7/P2ppk2/5p2/8/8/6PP/1Q3P1K/8 w - - 0 1
 5. 7q/1kp4P/p1p5/1p6/5Q2/PP6/2P5/1K6 w - - 0 1
 
-##93. Motyw pata
+## 94. Motyw pata
 [hetman, pat]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=81
 1. 8/kp3Q2/p7/P5pp/8/4q3/8/7K w - - 0 1 //remis
@@ -635,7 +635,7 @@
 5. 8/8/8/8/1p6/k7/p6r/K1R5 w - - 0 1 //remis
 6. 1q6/8/8/8/7K/8/5Q2/7k w - - 0 1 //remis
 
-##94. Wieża vs. skoczek
+## 95. Wieża vs. skoczek
 [wieża, skoczek]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=82
 1. 8/8/8/7k/5K1n/8/8/6R1 w - - 0 1
@@ -645,11 +645,11 @@
 5. 8/2R3K1/8/5k2/5n2/8/8/8 w - - 0 1//remis
 6. 5NK1/8/5k2/8/8/8/8/3r4 b - - 0 1
 
-##95. Wieża vs. goniec
+## 96. Wieża vs. goniec
 [wieża, goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=83
 
-##96. Skoczek vs. goniec
+## 97. Skoczek vs. goniec
 [skoczek, goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=84
 1. 2k1n3/8/1KP4p/4B2P/8/8/8/8 w - - 0 1
@@ -659,7 +659,7 @@
 5. 1n4k1/8/6K1/1B6/8/8/6P1/8 w - - 0 1
 6. 1k2B2n/6p1/1K3p1p/4pP1P/4P2P/8/1P6/8 w - - 0 1
 
-##97. Hetman vs. dwie wieże
+## 98. Hetman vs. dwie wieże
 [hetman, wieża]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=85
 1. 8/R7/4q1pk/p1p2p1p/PpP5/1P4P1/7P/R6K b - - 0 1
@@ -669,7 +669,7 @@
 5. 6k1/pR3p1p/1p4pP/q4P2/2P3P1/1P6/P7/K6R b - - 0 1
 6. 8/5q2/6pk/4Pp1p/3P1P2/7R/7P/R6K b - - 0 1
 
-##98. Skoczek lepszy od gońca
+## 99. Skoczek lepszy od gońca
 [skoczek, goniec]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=86
 1. 6k1/8/8/6K1/2N1p3/4P3/6P1/2b5 w - - 0 1
@@ -679,7 +679,7 @@
 5. 4k3/8/1p5p/p2P2pP/PpKN1pP1/1P3P2/8/3b4 w - - 0 1
 6. 4B3/4n3/2p3p1/2Pp1pP1/3PkP2/2P1p1Pp/7P/4K3 b - - 0 1
 
-##99. Hetman lepszy od dwóch wież
+## 100. Hetman lepszy od dwóch wież
 [hetman, wieża]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=87
 1. 8/R7/4q1pk/p1p2p1p/PpP5/1P4P1/7P/R6K b - - 0 1
@@ -689,8 +689,8 @@
 5. 6k1/pR3p1p/1p4pP/q4P2/2P3P1/1P6/P7/K6R b - - 0 1
 6. 8/5q2/6pk/4Pp1p/3P1P2/7R/7P/R6K b - - 0 1
 
-#2. Taktyka
-##1. Odsłonięty król
+# 2. Taktyka
+## 1. Odsłonięty król
 [taktyka, atak na króla]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=90
 1. r2qrk2/3nb3/p5Q1/2ppn3/1p2p2P/NP2P3/P1PP1PB1/R3K1R1 w - - 0 1
@@ -700,7 +700,7 @@
 5. rn2k2r/p5pp/1pp1p3/6q1/4P3/1Q6/PPPR1PP1/2K4R w - - 0 1
 6. 7k/6r1/3r4/1p2pp2/pPbP2p1/P1P1P2P/3R3K/6R1 b - - 0 1
 
-##2. Luźne piony i figury
+## 2. Luźne piony i figury
 [taktyka, luźna figura]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=91
 1. r1b3k1/ppppR1pp/8/4P3/8/2N1P3/PPP3PP/6K1 b - - 0 1
@@ -710,7 +710,7 @@
 5. 5rk1/p2qb1p1/1pR1p2p/4P3/P2p4/3P1N2/2Q2PPP/6K1 b - - 0 1
 6. 8/1p6/p1k1p3/1n1pP1p1/3P1p2/B2K1P2/PP3P2/8 w - - 0 1
 
-##3. Źle ułożone figury
+## 3. Źle ułożone figury
 [kontrakak]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=92
 1. r2q1knr/ppp2B1p/3p3b/n2Q2p1/3PPpb1/2P2N2/PP4PP/RNB2RK1 b - - 0 1
@@ -720,7 +720,7 @@
 5. 3rr3/kp3p2/p1bq1n1p/3pnQp1/3N4/P1P2NP1/1PB2PP1/2KR3R b - - 0 1
 6. 3r1br1/2pkqp2/B1p4p/3pB1p1/3P4/N2Q1P2/PPP2nPP/2KR4 w - - 0 1
 
-##4. Kombinacja szachowa
+## 4. Kombinacja szachowa
 [kombinacja]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=93
 1. 3q1rk1/R4ppp/4p3/2Q1P3/2Pn4/6P1/5PBP/6KP b - - 0 1
@@ -730,7 +730,7 @@
 5. 4r1k1/5pbp/2pq1np1/2Np1b2/1r1B4/4P1PP/2P1QPB1/2RR2K1 b - - 0 1
 6. 2r1k2r/1pqbbp2/p3p1p1/3pP3/3P1PQ1/NnPB1N2/3B4/R4RK1 b - - 0 1
 
-##5, Widełki
+## 5, Widełki
 [kombinacja, widełki]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=94
 1. 8/6r1/2p1kp2/1p6/p2pPp2/P2P1N2/1Pr5/4KR2 w - - 0 1
@@ -740,7 +740,7 @@
 5. 8/5B2/8/4kpp1/1p2n3/1P2PK1P/8/8 w - - 0 1
 6. 7k/p1q5/8/2b1pr1p/8/P3QP2/1B3P1r/5KR1 w - - 0 1
 
-##6. Widełki pionem
+## 6. Widełki pionem
 [widełki]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=95
 1. 8/8/8/2k1q3/8/3P4/2NK4/8 w - - 0 1
@@ -750,7 +750,7 @@
 5. 8/8/8/K1k2q2/8/2P5/3PR3/8 w - - 0 1
 6. r1bqkb1r/5ppp/p1np1n2/1p2p1B1/4P3/N1N5/PPPQ1PPP/R3KB1R b KQkq - 0 1
 
-##7. Związanie
+## 7. Związanie
 [związanie]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=96
 1. 6rk/1p3prp/p2qpQ2/8/P2P4/5b2/1P3KR1/7R w - - 0 1
@@ -760,7 +760,7 @@
 5. 7k/p3q2p/5b2/6Q1/8/2B4P/6P1/7K b - - 0 1
 6. 4k3/1b3r2/3pp3/2p5/8/5R2/6R1/B4K2 w - - 0 1
 
-##8. Podwójne uderzenie
+## 8. Podwójne uderzenie
 [podwójne uderzenie, podwójny szach]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=97
 1. 6k1/1b1nB1p1/pq1Q3p/1p6/4P1n1/P1N5/1PP2rPP/R3R1K1 b - - 0 1
@@ -770,7 +770,7 @@
 5. 2R2bk1/6p1/2N2pp1/2np4/8/5P1P/2r2BP1/5K2 w - - 0 1
 6. 8/3r4/3ppkb1/8/4Pp2/5P2/P1BR4/4K3 w - - 0 1
 
-##9. Odkryty szach
+## 9. Odkryty szach
 [szach]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=98
 1. rnbk1bnr/ppp2ppp/4p3/8/4q3/2N5/PPPBPPPP/2KR1BNR w - - 0 1
@@ -780,7 +780,7 @@
 5. 8/2Q3k1/5q2/4n3/8/6b1/P7/KR6 b - - 0 1
 6. 2kr3r/Qb3p2/p3p3/1p2n3/1PB5/5qP1/3K1P2/2R1R3 w - - 0 1
 
-##10. Atak z odsłony
+## 10. Atak z odsłony
 [atak z odsłony]
 //https://szachus.elms.pl/szkolenie.html?tid=1&lid=99
 1. 8/pq4kp/1p1b1pp1/2p5/2P2n1P/1P4Q1/P4B1P/4R1K1 b - - 0 1
