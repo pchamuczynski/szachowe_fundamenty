@@ -56,7 +56,8 @@ class ChessDb:
             id +=1
             
         if(self.get_user('default') == None):
-            self.__sql_query('INSERT INTO users VALUES (0, default)')
+            print('Creating default user')
+            self.__sql_query('INSERT INTO users VALUES default')
         self.connection.commit()
 
     def __del__(self):
@@ -108,6 +109,7 @@ class ChessDb:
         return tasks
         
     def get_solved_tasks(self, user, count = 0, shuffle = False):
+        print('Getting ' +str(count)  + ' solved tasks for user ' + user)
         sql_get_solved_tasks = "SELECT * FROM tasks WHERE id NOT IN (SELECT task_id FROM favorites WHERE user_name = '" + user + "') AND id IN (SELECT task_id FROM training WHERE user_name = '" + user + "')"
         result = self.__sql_query(sql_get_solved_tasks)
         tasks = []

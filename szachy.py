@@ -79,6 +79,9 @@ def parse_args():
     parser.add_argument('--training', dest='training', action='store_true', help='Your daily training')
     parser.add_argument('--user', dest='user', action='store', help='Your name', default='default')
     parser.add_argument('--db_file', dest='db_file', action='store', help='Name of the database file', default='szachy.db')
+    parser.add_argument('--solved', dest='solved', action='store', help="Number of solved tasks to be displayed in the training mode", default=5)
+    parser.add_argument('--new', dest='new', action='store', help="Number of new tasks to be displayed in the training mode", default=5)
+    parser.add_argument('--favorite', dest='favorite', action='store', help="Number of favorite tasks to be displayed in the training mode", default=5)
     
     return vars(parser.parse_args())
 
@@ -187,16 +190,20 @@ def perform_tasks(tasks, favorites, user, db):
     for task in tasks:
         perform_training_task(task, favorites, user, db)
 
-def training(tasks, db_file, user):
+def training(tasks, db_file, user, solved, new, favorite):
     try:
         db = ChessDb(db_file, tasks)
         
         print("First a few tasks that you already know")
-        solved_tasks = db.get_solved_tasks(user, 5, True)
-        favorite_tasks = db.get_favorite_tasks(user, 5, True)
-        new_tasks = db.get_new_tasks(user, 5)
+        solved_tasks = favorite_tasks = new_tasks = []
+        if solved > 0:
+            solved_tasks = db.get_solved_tasks(user, solved, True)
+        if favorite > 0:
+            favorite_tasks = db.get_favorite_tasks(user, favorite, True)
+        if new > 0:
+            new_tasks = db.get_new_tasks(user, new)
 
-        if len(solved_tasks) == 0:
+        if len(solved_tasks) == 0 and solved > 0:
             print('No routine tasks found. Please do some tasks some.')
         else:
             # [print(task) for task in solved_tasks]
@@ -204,7 +211,7 @@ def training(tasks, db_file, user):
         
         print('----------------------------------------------')
         print("Now a few new tasks")
-        if len(new_tasks) == 0:
+        if len(new_tasks) == 0 and new > 0:
             print('No new tasks found. You have done all excercises. Congratulations!')
         else:
             # [print(task) for task in new_tasks]
@@ -212,11 +219,11 @@ def training(tasks, db_file, user):
             
         print('----------------------------------------------')
         print("And finally, some tasks that you liked exceptionally!")
-        if len(favorite_tasks) == 0:
+        if len(favorite_tasks) == 0 and favorite > 0:
             print('No favorite tasks found. Please add some.')
         else:
             # [print(task) for task in favorite_tasks]
-            perform_tasks(new_tasks, True, user, db)
+            perform_tasks(favorite_tasks, True, user, db)
         print('----------------------------------------------')
         
     except Error as e:
@@ -236,7 +243,7 @@ def main():
     # create_main_window()
 
     if args['training']:
-        training(tasks, args['db_file'], args['user'])
+        training(tasks, args['db_file'], args['user'], int(args['solved']), int(args['new']), int(args['favorite']))
     else:
         tasks = filter_tasks(tasks, args)
         [print(task) for task in tasks]
