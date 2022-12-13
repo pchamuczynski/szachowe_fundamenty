@@ -5,42 +5,18 @@ from sqlite3 import Error
 import tkinter
 import chess, chess.svg
 from utils.chessdb import ChessDb
+from utils.task import Task
 import sys
 from enum import Enum
 import keyboard
-
-class ACTION(Enum):
-    NEXT = 1
-    SKIP_SECTION = 2
-    ADD_TO_FAVORITES = 3
-    REMOVE_FROM_FAVORITES = 4
-    HINT = 5
-    SKIP = 6
-    QUIT = 100
-
-class Task:
-    def __init__(self, tuple):
-        self.__init__(self, tuple[1], tuple[2], tuple[3], tuple[4], tuple[5], tuple[6])
         
-    def __init__(self, fen, chapter, lesson, number, tags, comment):
-        self.FEN = fen
-        self.chapter = chapter
-        self.lesson = lesson
-        self.number = number
-        self.tags = tags
-        self.comment = comment     
-        # print('Task created ' + str(self))
-    
-    def __str__(self):
-        return self.FEN + '\t(Chapter: ' + self.chapter + ', Lesson: ' + self.lesson + ', Task number: ' + str(self.number) + ', Tags: ' + str(self.tags) + ', Comment: ' + self.comment +')'       
-    
-           
 def parse_file(filename):
     tasks = []
 
     curreent_chapter = 'undefined'
     current_lesson = 'undefined'
     current_tags = []
+    url = ''
     file = open(filename, 'r')
     for line in file.readlines():
         line = line.strip()
@@ -51,6 +27,8 @@ def parse_file(filename):
             current_lesson = line[3:]
             current_tags = []
             # print('Parsing lesson: ' + current_lesson + ' in chapter ' + curreent_chapter)
+        if line.startswith('url:'):
+            url = line[4:]
         if line.startswith('[') and line.endswith(']'):
             tags = line[1:len(line) - 1]
             current_tags = [tag.strip() for tag in tags.split(',')]
@@ -62,7 +40,7 @@ def parse_file(filename):
             task_tags = [tag.strip() for tag in task_tags_substr[1:len(task_tags_substr) - 1].split(',') if tag.strip() != ''] + current_tags
             fen = line.split('.')[1].split('//')[0]
             
-            tasks.append(Task(fen, curreent_chapter, current_lesson, task_number, task_tags, task_comment))            
+            tasks.append(Task(fen, curreent_chapter, current_lesson, task_number, task_tags, url, task_comment))            
         
     return tasks
 
@@ -103,48 +81,6 @@ def filter_tasks(tasks, filters):
         
     print(result)
     return result  
-
-
-def sql_query(connection, query):
-    try:
-        c = connection.cursor()
-        c.execute(query)
-        return c.fetchall()
-    
-    except Error as e:
-        print(e)
-
-def init_db(tasks, connection):
-    sql_init_tasks_table = """ CREATE TABLE IF NOT EXISTS tasks(
-        id integer PRIMARY KEY,
-        FEN text NOT NULL,
-        chapter text NOT NULL,
-        lesson integer NOT NULL,
-        number integer NOT NULL,
-        tags text,
-        comment text
-    );"""
-    sql_query(connection, sql_init_tasks_table)
-    sql_query(connection, "DELETE FROM tasks")
-    id = 0
-    for task in tasks:
-        sql_query(connection, 'INSERT INTO tasks VALUES (' + str(id) + ',"' + task.FEN.strip() + '", "' + task.chapter + '", "' + str(task.lesson) + '", ' + str(task.number) + ', "' + str(task.tags) + '", "' + task.comment + '")')
-        id +=1
-        
-    sql_progress_table = """CREATE TABLE IF NOT EXISTS training(
-        id integer PRIMARY KEY,
-        FOREIGN KEY (task_id) REFERENCES tasks (id)
-        favorite bool NOT NULL,
-        );"""
-    sql_query(connection, sql_progress_table)
-    connection.commit()
-
-def get_task(connection, task_id):
-    sql_get_task = """SELECT * FROM tasks WHERE id = """ + str(task_id)
-    result = sql_query(connection, sql_get_task)
-    if len(result) > 0:
-        return Task(result[0][1], result[0][2], result[0][3], result[0][4], result[0][5], result[0][6])
-    return None
 
 def perform_training_task(task, favorite, user, db):
     print(task.FEN)
@@ -210,20 +146,20 @@ def training(tasks, db_file, user, solved, new, favorite):
             perform_tasks(solved_tasks, False, user, db)
         
         print('----------------------------------------------')
-        print("Now a few new tasks")
+        print("Next, some tasks that you liked exceptionally!")
+        if len(favorite_tasks) == 0 and favorite > 0:
+            print('No favorite tasks found. Please add some.')
+        else:
+            # [print(task) for task in favorite_tasks]
+            perform_tasks(favorite_tasks, True, user, db)
+        print('----------------------------------------------')
+        print("And finally a few new tasks")
         if len(new_tasks) == 0 and new > 0:
             print('No new tasks found. You have done all excercises. Congratulations!')
         else:
             # [print(task) for task in new_tasks]
             perform_tasks(new_tasks, False, user, db)
             
-        print('----------------------------------------------')
-        print("And finally, some tasks that you liked exceptionally!")
-        if len(favorite_tasks) == 0 and favorite > 0:
-            print('No favorite tasks found. Please add some.')
-        else:
-            # [print(task) for task in favorite_tasks]
-            perform_tasks(favorite_tasks, True, user, db)
         print('----------------------------------------------')
         
     except Error as e:

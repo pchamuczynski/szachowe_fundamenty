@@ -5,13 +5,14 @@ from utils import task, user, training
 import random
 
 class ChessDb:
-    sql_init_tasks_table = """ CREATE TABLE IF NOT EXISTS tasks(
+    sql_init_tasks_table = """ CREATE TABLE tasks(
         id integer PRIMARY KEY AUTOINCREMENT,
         FEN text NOT NULL,
         chapter text NOT NULL,
         lesson integer NOT NULL,
         number integer NOT NULL,
         tags text,
+        url text,
         comment text
     );"""
     
@@ -44,6 +45,7 @@ class ChessDb:
     def __init__(self, db_file, tasks):
         self.connection = sqlite3.connect(db_file)
         
+        self.__sql_query("DROP TABLE IF EXISTS tasks;")
         self.__sql_query(self.sql_init_tasks_table)
         self.__sql_query(self.sql_init_users_table)
         self.__sql_query(self.sql_init_training_table)
@@ -52,7 +54,7 @@ class ChessDb:
         self.__sql_query("DELETE FROM tasks")
         id = 0
         for task in tasks:
-            self.__sql_query('INSERT INTO tasks VALUES (' + str(id) + ',"' + task.FEN.strip() + '", "' + task.chapter + '", "' + task.lesson + '", ' + str(task.number) + ', "' + str(task.tags) + '", "' + task.comment + '")')
+            self.__sql_query('INSERT INTO tasks VALUES (' + str(id) + ',"' + task.FEN.strip() + '", "' + task.chapter + '", "' + task.lesson + '", ' + str(task.number) + ', "' + str(task.tags) + '", "' + task.url +'", "' + task.comment + '")')
             id +=1
             
         if(self.get_user('default') == None):
@@ -89,7 +91,7 @@ class ChessDb:
         tasks = []
         if result != None:
             for row in result:
-                tasks.append(task.Task(row[1], row[2], row[3], row[4], row[5], row[6]))
+                tasks.append(task.Task(row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
             if shuffle:
                 random.shuffle(tasks)
             if count > 0:
@@ -101,7 +103,7 @@ class ChessDb:
         result = self.__sql_query(sql_get_favorite_tasks)
         tasks = []
         if result != None:
-            tasks = [task.Task(row[1], row[2], row[3], row[4], row[5], row[6]) for row in result]
+            tasks = [task.Task(row[1], row[2], row[3], row[4], row[5], row[6], row[7]) for row in result]
         if shuffle:
             random.shuffle(tasks)
         if count > 0:
@@ -109,13 +111,13 @@ class ChessDb:
         return tasks
         
     def get_solved_tasks(self, user, count = 0, shuffle = False):
-        print('Getting ' +str(count)  + ' solved tasks for user ' + user)
+        print('Getting ' +str(count)  + '  solved tasks for user ' + user)
         sql_get_solved_tasks = "SELECT * FROM tasks WHERE id NOT IN (SELECT task_id FROM favorites WHERE user_name = '" + user + "') AND id IN (SELECT task_id FROM training WHERE user_name = '" + user + "')"
         result = self.__sql_query(sql_get_solved_tasks)
         tasks = []
         if result != None:
             for row in result:
-                tasks.append(task.Task(row[1], row[2], row[3], row[4], row[5], row[6]))
+                tasks.append(task.Task(row[1], row[2], row[3], row[4], row[5], row[6], row[7]))
             if shuffle:
                 random.shuffle(tasks)
             if count > 0:
